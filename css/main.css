@@ -67,6 +67,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -501,23 +503,28 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  width: 170px;
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
   height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .clients__link {
