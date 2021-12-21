@@ -1,11 +1,12 @@
 .buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 40px;
 }
 
-.buttons__item:not(:last-child) {
-  margin-right: 8px;
+.buttons__item {
+  margin: 8px;
 }
 
 .buttons__filter {

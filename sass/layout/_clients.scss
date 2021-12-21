@@ -1,17 +1,27 @@
-.clients__title {
+.section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--header-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  color: var(--title-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
+
 .clients {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
   @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .clients__item {
@@ -24,9 +34,9 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 90px) / 3);
   }
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
