@@ -1,11 +1,12 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
+  margin-bottom: 64px;
 }
 
 .contacts__link {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  // padding-top: 15px;
+  // padding-bottom: 15px;
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -22,8 +23,11 @@
   }
 }
 
-.contacts .contacts__item:not(:last-child) {
-  margin-right: 50px;
+// .contacts .contacts__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+.contacts__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .contacts__icon {

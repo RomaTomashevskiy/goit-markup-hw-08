@@ -18,34 +18,47 @@
     <!-- Section header-->
     <header class="header">
         <div class="container header__container ">
-            <nav class="navigation">
-                <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
-                <ul class="site_nav">
-                    <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline" href="./index.html"><span class="site_nav__nav">Студия</span></a>
+            <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
+            <button type="" class="mobal__btn"> 
+                <svg class="mobal__icon" width="24" height="16" >
+                    <use href="./images/symbol-icon.svg#icon-menu_24px-1"></use>
+                </svg>
+            </button>
+           <div class="mobal_menu is-open">
+                <nav class="navigation">
+                    <ul class="site_nav">
+                        <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline" href="./index.html"><span class="site_nav__nav">Студия</span></a>
+                        </li>
+                        <li class="site_nav__item"><a class="site_nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site_nav__item"><a class="site_nav__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item"><a class="contacts__link " href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./images/symbol-icon.svg#icon-envelope1-1"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="contacts__item"><a class="contacts__link " href="tel:+380961111111">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./images/symbol-icon.svg#icon-smartphone1-1"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </li>
-                    <li class="site_nav__item"><a class="site_nav__link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="site_nav__item"><a class="site_nav__link" href="">Контакты</a></li>
                 </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__item"><a class="contacts__link " href="mailto:info@devstudio.com">
-                    <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/symbol-icon.svg#icon-envelope1-1"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
-                <li class="contacts__item"><a class="contacts__link " href="tel:+380961111111">
-                    <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/symbol-icon.svg#icon-smartphone1-1"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-                </li>
-            </ul>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="">Instagram <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Twitter <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Facebook <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">LinkedIn</a></li>
+                </ul> 
+            </div>
         </div>
     </header>
 
     <main>
-        <!--Section banner-->
+        <!-- Section banner -->
         <section class="hero">
             <div class="hero__container container">
                 <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>

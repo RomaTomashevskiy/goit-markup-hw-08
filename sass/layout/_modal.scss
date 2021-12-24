@@ -7,8 +7,8 @@
   transition: opacity 400ms, visibility 400ms;
 }
 .backdrop__modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
 
   background: var(--background-color);
@@ -20,6 +20,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop__close {

@@ -1,7 +1,6 @@
 .buttons {
   display: flex;
   flex-wrap: wrap;
-
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
@@ -17,6 +16,9 @@
     margin-right: 8px;
   }
   @media screen and (max-width: 767px) {
+    &:nth-child(3) {
+      margin-right: 0;
+    }
     &:nth-child(4) {
       margin-top: 15px;
     }

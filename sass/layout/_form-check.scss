@@ -4,22 +4,28 @@
 .checkbox__text {
   font-weight: 400;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   display: flex;
   cursor: pointer;
   color: var(--paragraph-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox__link {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   align-items: center;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
   color: var(--button-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox__item {
