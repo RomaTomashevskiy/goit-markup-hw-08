@@ -1122,41 +1122,37 @@ body {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    margin: -15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .projects {
-    justify-content: center;
+  .projects__item {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 100vh;
+@media screen and (min-width: 768px) {
+  .projects__item {
+    margin: 15px;
   }
-}
-
-.projects__item {
-  flex-basis: calc((100% - 2 * 15) / 2);
-  position: relative;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  background: #ffffff;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__item {
-    flex-basis: calc((100% - 30) / 2);
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .projects__item:nth-last-child(3n + 1) {
-    margin-right: -30px;
+  .projects__item {
+    width: 370px;
   }
 }
 
