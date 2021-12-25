@@ -16,33 +16,51 @@
 </head>
 <body>
     <!--Section header-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container ">
-            <nav class="navigation">
-                <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
-                <ul class="site_nav">
-                    <li class="site_nav__item"><a class="site_nav__link" href="./index.html">Студия</a>
+            <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
+            <button type="" class="mobal__btn" data-menu-open>
+                <svg class="mobal__icon" width="24" height="16">
+                    <use href="./images/symbol-icon.svg#icon-menu_24px-1"></use>
+                </svg>
+            </button>
+            <div class="mobal_menu is-open" data-menu>
+                <button type="" class="mobal__close_btn" data-menu-close>
+                    <svg class="mobal__icon_close" widthf="40" height="40">
+                        <use href="./images/symbol-icon.svg#icon-close-black-18dp"></use>
+                    </svg>
+                </button>
+                <nav class="navigation">
+                    <ul class="site_nav">
+                        <li class="site_nav__item"><a class="site_nav__link site_nav__link site_nav__link_styles" href="./index.html">Студия</a>
+                        </li>
+                        <li class="site_nav__item"><a class="site_nav__link site_nav__link site_nav__link_underline" href="./portfolio.html"><span class="site_nav__nav">Портфолио</span></a>
+                        </li>
+                        <li class="site_nav__item"><a class="site_nav__link site_nav__link_styles" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item"><a class="contacts__link styles__maito" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./images/symbol-icon.svg#icon-envelope1-1"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="contacts__item"><a class="contacts__link styles__tel" href="tel:+380961111111">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./images/symbol-icon.svg#icon-smartphone1-1"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </li>
-                    <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline" href="./portfolio.html"><span class="site_nav__nav">Портфолио</span></a>
-                    </li>
-                    <li class="site_nav__item"><a class="site_nav__link" href="">Контакты</a></li>
                 </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__item"><a class="contacts__link " href="mailto:info@devstudio.com">
-                    <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/symbol-icon.svg#icon-envelope1-1"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
-                <li class="contacts__item"><a class="contacts__link " href="tel:+380961111111">
-                    <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/symbol-icon.svg#icon-smartphone1-1"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-                </li>
-            </ul>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="">Instagram <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Twitter <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Facebook <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
-    </header> -->
+    </header>
     <!--Section main-->
     <main>
         <section class="section">
@@ -75,11 +93,11 @@
                             <div class="projects_overlay"> 
                                 <picture>
                                     <source srcset=
-                                    "./images.portfolio/technocryk1x.jpg , 
-                                    ./images.portfolio/technocryk2x.jpg" 
+                                    "./images.portfolio/technocryk1x.jpg x1, 
+                                    ./images.portfolio/technocryk2x.jpg" x2 
                                     media="(min-width:1200)">
                                     <source srcset=
-                                    "./images.portfolio/technocryktablet1x.jpg ,
+                                    "./images.portfolio/technocryktablet1x.jpg  x,
                                     ./images.portfolio/technocryktablet2x.jpg" 
                                     media="(min-width:768)">
                                     <source srcset="./images.portfolio/technocrykmobil1x.jpg,
@@ -400,7 +418,7 @@
         </div>
     </div>
 </footer>
-     
+    <script src="./js/menu.js"></script>
 </body>
 </html>
     

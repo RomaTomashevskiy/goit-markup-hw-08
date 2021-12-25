@@ -17,48 +17,53 @@
 <body>
     <!-- Section header-->
     <header class="header">
-        <div class="container header__container ">
-            <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
-            <button type="" class="mobal__btn"> 
-                <svg class="mobal__icon" width="24" height="16" >
-                    <use href="./images/symbol-icon.svg#icon-menu_24px-1"></use>
-                </svg>
-            </button>
-           <div class="mobal_menu is-open">
-                <nav class="navigation">
-                    <ul class="site_nav">
-                        <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline" href="./index.html"><span class="site_nav__nav">Студия</span></a>
+          <div class="container header__container ">
+                <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
+                <button type="" class="mobal__btn" data-menu-open> 
+                    <svg class="mobal__icon" width="24" height="16" >
+                        <use href="./images/symbol-icon.svg#icon-menu_24px-1"></use>
+                    </svg>
+                </button>
+                <div class="mobal_menu is-open" data-menu>
+                    <button type="" class="mobal__close_btn" data-menu-close>
+                    <svg class="mobal__icon_close" widthf="40" height="40">
+                        <use href="./images/symbol-icon.svg#icon-close-black-18dp"></use>
+                    </svg>
+                    </button>
+                    <nav class="navigation">
+                        <ul class="site_nav">
+                            <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline  site_nav__link_styles" href="./index.html"><span class="site_nav__nav">Студия</span></a>
+                            </li>
+                            <li class="site_nav__item"><a class="site_nav__link site_nav__link_styles" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="site_nav__item"><a class="site_nav__link site_nav__link_styles" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts">
+                        <li class="contacts__item"><a class="contacts__link styles__maito" href="mailto:info@devstudio.com">
+                                <svg class="contacts__icon" width="16" height="12">
+                                    <use href="./images/symbol-icon.svg#icon-envelope1-1"></use>
+                                </svg>
+                                info@devstudio.com</a></li>
+                        <li class="contacts__item"><a class="contacts__link styles__tel" href="tel:+380961111111">
+                                <svg class="contacts__icon" width="10" height="16">
+                                    <use href="./images/symbol-icon.svg#icon-smartphone1-1"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
                         </li>
-                        <li class="site_nav__item"><a class="site_nav__link" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="site_nav__item"><a class="site_nav__link" href="">Контакты</a></li>
                     </ul>
-                </nav>
-                <ul class="contacts">
-                    <li class="contacts__item"><a class="contacts__link " href="mailto:info@devstudio.com">
-                            <svg class="contacts__icon" width="16" height="12">
-                                <use href="./images/symbol-icon.svg#icon-envelope1-1"></use>
-                            </svg>
-                            info@devstudio.com</a></li>
-                    <li class="contacts__item"><a class="contacts__link " href="tel:+380961111111">
-                            <svg class="contacts__icon" width="10" height="16">
-                                <use href="./images/symbol-icon.svg#icon-smartphone1-1"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="">Instagram <span class="menu__span"></span></a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Twitter <span class="menu__span"></span></a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Facebook <span class="menu__span"></span></a></li>
-                    <li class="menu__item"><a class="menu__link" href="">LinkedIn</a></li>
-                </ul> 
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="">Instagram <span class="menu__span"></span></a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Twitter <span class="menu__span"></span></a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Facebook <span class="menu__span"></span></a></li>
+                        <li class="menu__item"><a class="menu__link" href="">LinkedIn</a></li>
+                    </ul> 
+                </div>
             </div>
-        </div>
     </header>
 
     <main>
-        <!-- Section banner -->
+        <!--Section banner -->
         <section class="hero">
             <div class="hero__container container">
                 <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
@@ -145,16 +150,16 @@
                     <li class="command__item">
                          <picture>
                             <source 
-                            srcset=
-                            "./images/Igor1x.jpg,
-                            ./images/Igor2x.jpg"
+                            srcset="./images/Igor1x.jpg 1x,
+                            ./images/Igor2x.jpg 2x"
                             media="(min-width:1200)">
                             <source srcset=
-                             "./images/Igorteammobil1x.jpg,
-                            ./images/Igorteammobil2x.jpg" 
+                             "./images/Igorteamtablet1x.jpg 1x,
+                            ./images/Igorteamtablet2x.jpg 2x" 
                             media="(min-width:768)">
-                            <source srcset=   "./images/Igorteamtablet1x.jpg,
-                            ./images/Igorteamtablet2x.jpg"
+                            <source srcset=
+                            "./images/Igorteammobil1x.jpg 1x,
+                            ./images/Igorteammobil2x.jpg 2x"
                             media="(min-width:480)">  
                             <img src="./images/Igorteam.jpg" alt="Игорь Демьяненко">
                         </picture>
@@ -197,16 +202,16 @@
                     <li class="command__item">
                         <picture>
                             <source srcset=
-                            "./images/olga1x.jpg,
-                            ./images/Olga2x.jpg" 
+                            "./images/olga1x.jpg 1x,
+                            ./images/Olga2x.jpg 2x" 
                              media="(min-width:1200)">
                             <source srcset=
-                            "./images/olgateammobil1x.jpg,
-                            ./images/olgateammobil2x.jpg" 
+                            "./images/olgateammobil1x.jpg 1x,
+                            ./images/olgateammobil2x.jpg 2x" 
                             media="(min-width:768)">
                             <source srcset=
-                            "./images/olgateamtablet1x.jpg,
-                            ./images/olgateamtablet2x.jpg" 
+                            "./images/olgateamtablet1x.jpg 1x,
+                            ./images/olgateamtablet2x.jpg 2x" 
                             media="(min-width:480)">
                         <img src="./images/Olgateam.jpg" alt="Ольга Репина">
                         </picture>
@@ -249,18 +254,18 @@
                     <li class="command__item">
                         <picture>
                             <source srcset=
-                            "./images/nicolay1x.jpg, 
-                            ./images/nicolay2x.jpg"
+                            "./images/nicolay1x.jpg 1x, 
+                            ./images/nicolay2x.jpg 2x"
                              media="(min-width:1200)">
                             <source srcset=
-                            "./images/nicolayteamtablet1x.jpg,
-                            ./images/nicolayteamtablet2x.jpg" 
+                            "./images/nicolayteamtablet1x.jpg 1x,
+                            ./images/nicolayteamtablet2x.jpg 2x" 
                             media="(min-width:768)">
                             <source srcset=
-                            "./images/nicolayteammobil1x.jpg,
-                            ./images/nicolayteammobil2x.jpg"
+                            "./images/nicolayteammobil1x.jpg 1x,
+                            ./images/nicolayteammobil2x.jpg 2x"
                             media="(min-width:480)">
-                            <img src="./images/nicolayteam.jpg" alt="Николай Тарасов">
+                            <img src="./images/Nicolayteam.jpg" alt="Николай Тарасов">
                         </picture>
                         <div class="command__box">
                             <h3 class="command__title">Николай Тарасов</h3>
@@ -300,16 +305,16 @@
                     <li class="command__item">
                         <picture>
                             <source srcset
-                            ="./images/mihail1x.jpg,
-                            ./images/mihail2x.jpg"
+                            ="./images/mihail1x.jpg 1x,
+                            ./images/mihail2x.jpg 2x"
                              media="(min-width:1200)">
                             <source srcset
-                            ="./images/Mihailteamtablet1x.jpg,
-                            ./images/Mihailteamtablet2x.jpg"
+                            ="./images/Mihailteamtablet1x.jpg 1x,
+                            ./images/Mihailteamtablet2x.jpg 2x"
                              media="(min-width:768)">
                             <source srcset
-                            ="./images/mihailteammobil1x.jpg,
-                            ./images/mihailteammobil2x.jpg" 
+                            ="./images/mihailteammobil1x.jpg 1x,
+                            ./images/mihailteammobil2x.jpg 2x" 
                             media="(min-width:480)">
                             <img src="./images/teammikhail.jpg" alt="Михаил Ермаков">
                         </picture>
@@ -352,7 +357,7 @@
             </div>
         </section>
         <!---Постоянные клиенты--->
-        <section class="section clients">
+        <section class="section ">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="clients">
@@ -526,6 +531,7 @@
         </form>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

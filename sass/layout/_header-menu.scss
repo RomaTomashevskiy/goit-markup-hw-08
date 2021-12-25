@@ -7,8 +7,19 @@
     height: 100%;
     background-color: var(--background-color);
     // transform: translateX(100%);
-    transition: transform 1000ms linear;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 48px 40px;
+    z-index: 2;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 .menu__link {
@@ -28,20 +39,90 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+  & {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 .menu {
   display: flex;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
 .mobal__btn {
-  //   margin-left: auto;
   align-items: center;
   justify-content: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--button-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mobal_menu .is-open {
   transform: translateX(0);
 }
-.menu__span {
+
+.styles__maito {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+
+  color: var(--paragraph-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.styles__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+
+  letter-spacing: 0.02em;
+
+  color: var(--button-color);
+  @media screen and (min-width: 768px) {
+    color: var(--paragraph-color);
+  }
+}
+
+.mobal__close_btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobal__icon_close {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: #188ce8;
+  }
 }
