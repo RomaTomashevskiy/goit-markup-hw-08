@@ -17,22 +17,18 @@
 <body>
     <!-- Section header-->
     <header class="header">
-          <di class="container header__container ">
+          <div class="container header__container ">
                 <a class="logo" href="/index.html">Web<span class="logo__dark">Studio</span></a>
-                <button type="" class="mobal__btn" data-menu-open> 
-                    <svg class="mobal__icon" width="24" height="16" >
+                <button type="" class="mobale__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"> 
+                    <svg class="mobale__icon" width="24" height="16" >
                         <use href="./images/symbol-icon.svg#icon-menu_24px-1"></use>
                     </svg>
                 </button>
-                <div class="mobal_menu is-open" data-menu>
-                    <button type="" class="mobal__close_btn" data-menu-close>
-                    <svg class="mobal__icon_close" widthf="40" height="40">
-                        <use href="./images/symbol-icon.svg#icon-close-black-18dp"></use>
-                    </svg>
-                    </button>
+                <div class="header__box">
                     <nav class="navigation">
                         <ul class="site_nav">
-                            <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline  site_nav__link_styles" href="./index.html"><span class="site_nav__nav">Студия</span></a>
+                            <li class="site_nav__item"><a class="site_nav__link site_nav__link_underline  site_nav__link_styles"
+                                    href="./index.html"><span class="site_nav__nav">Студия</span></a>
                             </li>
                             <li class="site_nav__item"><a class="site_nav__link site_nav__link_styles" href="./portfolio.html">Портфолио</a>
                             </li>
@@ -52,13 +48,36 @@
                                 +38 096 111 11 11</a>
                         </li>
                     </ul>
-                    <ul class="menu">
-                        <li class="menu__item"><a class="menu__link" href="">Instagram <span class="menu__span"></span></a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Twitter <span class="menu__span"></span></a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Facebook <span class="menu__span"></span></a></li>
-                        <li class="menu__item"><a class="menu__link" href="">LinkedIn</a></li>
-                    </ul> 
                 </div>
+            </div>
+
+            <div class="mobale_menu js-container-menu " id="mobale-menu">
+                <button type="" class="mobale__close_btn js-close-menu" >
+                    <svg class="mobale__icon_close" widthf="40" height="40">
+                        <use href="./images/symbol-icon.svg#icon-close-black-18dp"></use>
+                    </svg>
+                </button>
+                <ul class="mobale__site_nav">
+                    <li class="mobale__item"><a class="mobale__link " href="./index.html"><span class="mobale__site_nav__styles">Студия</span></a>
+                    </li>
+                    <li class="mobale__item"><a class="mobale__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobale__item"><a class="mobale__link" href="">Контакты</a></li>
+                </ul>
+            
+                <ul class="mobale__contacts">
+                    <li class="mobale__contacts_item"><a class="mobale__contacts_link_tel" href="tel:+380961111111">
+                        +38 096 111 11 11</a></li>
+                    <li class="mobale__contacts_item"><a class="mobale__contacts_link_mailto" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="">Instagram <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Twitter <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Facebook <span class="menu__span"></span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="">LinkedIn</a></li>
+                </ul>
             </div>
     </header>
 
@@ -531,7 +550,11 @@
         </form>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>

@@ -3,7 +3,7 @@
   margin-left: auto;
   padding: 60px 0;
   background-color: #2f303a;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -22,9 +22,11 @@
 }
 
 .address__box {
-  flex-grow: 1;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
   }
 }
 
