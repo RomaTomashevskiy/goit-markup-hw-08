@@ -10,7 +10,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Headermobil1x.jpg);
+    url(../images/headermob1x.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -26,14 +26,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Headermobil2x.jpg);
+      url(../images/headermob2x.jpg);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Headertablet1x.jpg);
+      url(../images/headertab1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -41,7 +41,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/headertablet2x.jpg);
+        url(../images/headertab2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -49,7 +49,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/header.jpg);
+      url(../images/headerdeck1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -57,7 +57,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/header2x.jpg);
+        url(../images/headerdeck2x.jpg);
     }
   }
 }
