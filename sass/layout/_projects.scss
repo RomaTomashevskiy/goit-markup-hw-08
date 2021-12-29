@@ -49,6 +49,23 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.projects_box__title__text {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--title-color);
+  }
+}
+
 .projects__link:hover .projects__text,
 .projects__link:focus .projects__text {
   transform: translateY(0%);
